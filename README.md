@@ -6,6 +6,9 @@ max c*x[p] -(1/2)x[p]Q[p][p]x[p] + sum_{j \neq i} x[j]Q[p][j]x[p]
 s.t. Ax <=b
 x[:n_I] binary and x[:n_C] >=0 continuous
 
+Implementation of the methodology described in 
+M. Carvalho, A. Lodi, J. P. Pedroso, "Computing Nash equilibria for integer programming games". arxiv paper
+
 **Instances.py**: contains all methods to generate random Knapsack Game, Kidney Exchange Game and Lot-Sizing Game instances, as well as the implementations to save and read such instances. In fact, this file creates the class of Integer Programming Games (IPGs). 
 
 **Computer_NE.py**: contains all methods to compute Nash equilibria for an IPG. *IterativeSG* is the method m-SGM wiht time limit of 1h and as input a maximum number of iterations, and *IterativeSG_NOT_DFS* is SGM.
