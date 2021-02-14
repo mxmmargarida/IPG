@@ -1,10 +1,12 @@
 # Equilibria for integer programming games
 
 Each player p must solve a problem of the form
-$$a^2$$
+![equation](https://latex.codecogs.com/svg.latex?\max%20\%20\%20c^Tx^p%20-\frac{1}{2}(x^p)^TQ_p^px^p%20+%20\sum_{k%20\in%20M:%20k%20\neq%20p}%20(x^k)^TQ_k^px^p\\%20s.t.%20\%20\%20A^px^p%20\leq%20b^p%20\\x_i%20\in%20\{0,1\},%20%20i=1,...,B_p)
+$$
 max c*x[p] -(1/2)x[p]Q[p][p]x[p] + sum_{j \neq i} x[j]Q[p][j]x[p]
 s.t. Ax <=b
 x[:n_I] binary and x[:n_C] >=0 continuous
+$$
 
 Implementation of the methodology described in 
 M. Carvalho, A. Lodi, J. P. Pedroso, "Computing Nash equilibria for integer programming games". arxiv paper
