@@ -1,13 +1,10 @@
 # Equilibria for integer programming games
 
-Each player p must solve a problem of the form
+Each player p in the set M must solve a problem of the form
 
 ![equation](https://latex.codecogs.com/gif.latex?%5Cmax%20%5C%20%5C%20c%5ETx%5Ep%20-%5Cfrac%7B1%7D%7B2%7D%28x%5Ep%29%5ETQ_p%5Epx%5Ep%20&plus;%20%5Csum_%7Bk%20%5Cin%20M%3A%20k%20%5Cneq%20p%7D%20%28x%5Ek%29%5ETQ_k%5Epx%5Ep%5C%5C%20s.t.%20%5C%20%5C%20A%5Epx%5Ep%20%5Cleq%20b%5Ep%20%5C%5C%20x_i%20%5Cin%20%5C%7B0%2C1%5C%7D%2C%20i%3D1%2C...%2CB_p)
-$$
-max c*x[p] -(1/2)x[p]Q[p][p]x[p] + sum_{j \neq i} x[j]Q[p][j]x[p]
-s.t. Ax <=b
-x[:n_I] binary and x[:n_C] >=0 continuous
-$$
+where
+![equation](https://latex.codecogs.com/gif.latex?A%5Ep%20%5Cin%20M_%7Br_p%20%5Ctimes%20n_p%7D%2C%20n_p%20%5Cgeq%20B_p%2C%20b%5Ep%20%5Cin%20M_%7Br_p%20%5Ctimes%201%7D)
 
 Implementation of the methodology described in 
 M. Carvalho, A. Lodi, J. P. Pedroso, "Computing Nash equilibria for integer programming games". arxiv paper
