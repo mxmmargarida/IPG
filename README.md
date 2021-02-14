@@ -1,5 +1,9 @@
 # Equilibria for integer programming games
 
+Paper associated with this algorithmic implementation is
+[*M. Carvalho, A. Lodi, J. P. Pedroso, "Computing Nash equilibria for integer programming games". 2020. arXiv:2012.07082*](https://arxiv.org/abs/2012.07082)
+
+## Instances representation ##
 Each player p in the set M must solve a problem of the form
 
 ![equation](https://latex.codecogs.com/gif.latex?%5Cmax%20%5C%20%5C%20c%5ETx%5Ep%20-%5Cfrac%7B1%7D%7B2%7D%28x%5Ep%29%5ETQ_p%5Epx%5Ep%20&plus;%20%5Csum_%7Bk%20%5Cin%20M%3A%20k%20%5Cneq%20p%7D%20%28x%5Ek%29%5ETQ_k%5Epx%5Ep%5C%5C%20s.t.%20%5C%20%5C%20A%5Epx%5Ep%20%5Cleq%20b%5Ep%20%5C%5C%20x_i%5Ep%20%5Cin%20%5C%7B0%2C1%5C%7D%2C%20i%3D1%2C...%2CB_p)
@@ -9,10 +13,6 @@ where
 ![equation](https://latex.codecogs.com/gif.latex?A%5Ep%20%5Cin%20M_%7Br_p%20%5Ctimes%20n_p%7D%2C%20n_p%20%5Cgeq%20B_p%2C%20b%5Ep%20%5Cin%20M_%7Br_p%20%5Ctimes%201%7D)
 
 **Remark**: The implemented algorithmic approach is guaranteed to return an equilibrium if each player strategy set is bounded and non-empty. Otherwise, the algorithm may fail to stop. In particular note that this methodology is proven to be correct (see associated paper) **if all or part of the variables are continuous**.
-
-Paper associated with this algorithmic implementation
-
-[*M. Carvalho, A. Lodi, J. P. Pedroso, "Computing Nash equilibria for integer programming games". 2020. arXiv:2012.07082*](https://arxiv.org/abs/2012.07082)
 
 **Instances.py**: contains all methods to generate random Knapsack Game, Kidney Exchange Game and Lot-Sizing Game instances, as well as the implementations to save and read such instances. In fact, this file creates the class of Integer Programming Games (IPGs). 
 
