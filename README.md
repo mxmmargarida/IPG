@@ -1,6 +1,7 @@
 # Equilibria for integer programming games
 
 Paper associated with this algorithmic implementation is
+
 [*M. Carvalho, A. Lodi, J. P. Pedroso, "Computing Nash equilibria for integer programming games". 2020. arXiv:2012.07082*](https://arxiv.org/abs/2012.07082)
 
 ## Instances representation ##
