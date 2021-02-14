@@ -1,7 +1,7 @@
 # Equilibria for integer programming games
 
 Each player p must solve a problem of the form
-
+![equation](https://latex.codecogs.com/svg.latex?\max%20\%20\%20c^Tx^p%20-\frac{1}{2}(x^p)^TQ_p^px^p%20+%20\sum_{k%20\in%20M:%20k%20\neq%20p}%20(x^k)^TQ_k^px^p)
 $$
 max c*x[p] -(1/2)x[p]Q[p][p]x[p] + sum_{j \neq i} x[j]Q[p][j]x[p]
 s.t. Ax <=b
