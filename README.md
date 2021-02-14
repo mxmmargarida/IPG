@@ -1,7 +1,7 @@
 # Equilibria for integer programming games
 
 Each player p must solve a problem of the form
-![equation](https://www.codecogs.com/eqnedit.php?latex=\max&space;\&space;\&space;c^Tx^p&space;-\frac{1}{2}(x^p)^TQ_p^px^p&space;&plus;&space;\sum_{k&space;\in&space;M:&space;k&space;\neq&space;p}&space;(x^k)^TQ_k^px^p\\&space;s.t.&space;\&space;\&space;A^px^p&space;\leq&space;b^p&space;\\&space;x_i&space;\in&space;\{0,1\},&space;i=1,...,B_p" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\max&space;\&space;\&space;c^Tx^p&space;-\frac{1}{2}(x^p)^TQ_p^px^p&space;&plus;&space;\sum_{k&space;\in&space;M:&space;k&space;\neq&space;p}&space;(x^k)^TQ_k^px^p\\&space;s.t.&space;\&space;\&space;A^px^p&space;\leq&space;b^p&space;\\&space;x_i&space;\in&space;\{0,1\},&space;i=1,...,B_p" title="\max \ \ c^Tx^p -\frac{1}{2}(x^p)^TQ_p^px^p + \sum_{k \in M: k \neq p} (x^k)^TQ_k^px^p\\ s.t. \ \ A^px^p \leq b^p \\ x_i \in \{0,1\}, i=1,...,B_p)
+
 $$
 max c*x[p] -(1/2)x[p]Q[p][p]x[p] + sum_{j \neq i} x[j]Q[p][j]x[p]
 s.t. Ax <=b
