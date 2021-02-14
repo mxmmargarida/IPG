@@ -13,7 +13,7 @@ where
 
 ![equation](https://latex.codecogs.com/gif.latex?A%5Ep%20%5Cin%20M_%7Br_p%20%5Ctimes%20n_p%7D%2C%20n_p%20%5Cgeq%20B_p%2C%20b%5Ep%20%5Cin%20M_%7Br_p%20%5Ctimes%201%7D)
 
-**Remark**: The implemented algorithmic approach is guaranteed to return an equilibrium if each player strategy set is bounded and non-empty. Otherwise, the algorithm may fail to stop. In particular, note that this methodology is proven to be correct (see associated paper) **even if there are continous variables continuous**.
+**Remark**: The implemented algorithmic approach is guaranteed to return an equilibrium if each player strategy set is bounded and non-empty. Otherwise, the algorithm may fail to stop. In particular, note that this methodology is proven to be correct (see associated paper) **even if there are continous variables**, i.e., it is not necessary for all variables to be integer.
 
 ## Description of the files
 
