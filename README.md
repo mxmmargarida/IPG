@@ -1,7 +1,7 @@
 # Equilibria for integer programming games
 
 Each player p must solve a problem of the form
-
+![equation](https://latex.codecogs.com/gif.latex?%5Cmax%20c%5ETx%5Ep%20-%5Cfrac%7B1%7D%7B2%7D%28x%5Ep%29%5ETQ_p%5Epx%5Ep%20&plus;%20%5Csum_%7Bk%20%5Cin%20M%3A%20k%20%5Cneq%20p%7D%20%28x%5Ek%29%5ETQ_k%5Epx%5Ep)
 $$
 max c*x[p] -(1/2)x[p]Q[p][p]x[p] + sum_{j \neq i} x[j]Q[p][j]x[p]
 s.t. Ax <=b
